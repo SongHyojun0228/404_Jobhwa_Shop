@@ -17,7 +17,7 @@ export default function RetroWindow({
   awningColor = "#1f5048",
   children,
   toolbar,
-  statusLeft = "© 2025 개발자의 잡화점",
+  statusLeft = "© 개발자의 잡화점",
   statusRight,
   maxWidth = 392,
 }: RetroWindowProps) {
