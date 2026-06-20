@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── 색상 토큰 ── */
+  --color-page: #37615a;
+  --color-face: #ddd6c4;
+  --color-teal: #1f5048;
+  --color-paper: #fffdf6;
+  --color-ink: #2a2722;
+  --color-yellow: #ffd95c;
+  --color-terracotta: #b5562f;
+  --color-green: #2c8c3c;
+  --color-statusbar: #cfc9ba;
+  --color-statusbar-text: #6f6a5e;
+  --color-divider: #b3ad9d;
+  --color-muted: #6f6a5e;
+  --color-faint: #8a8474;
+  --color-placeholder: #a39c8b;
+  --color-chip-off: #e4dfd2;
+  --color-warn-bg: #fff3c4;
+  --color-warn-text: #6b5800;
+  --color-titlebar-btn: #d8d3c4;
+
+  /* 베벨 보더 */
+  --color-bevel-hi: #f1ede2;
+  --color-bevel-lo: #8f897a;
+
+  /* 버튼 베벨 색 */
+  --color-yellow-hi: #ffe9a6;
+  --color-yellow-lo: #c79a14;
+  --color-terracotta-hi: #d98a64;
+  --color-terracotta-lo: #7d3618;
+  --color-green-hi: #6cc279;
+  --color-green-lo: #1b5c27;
+
+  /* ── 그림자 ── */
+  --shadow-window: 7px 7px 0 rgba(15, 28, 25, 0.22);
+  --shadow-button: 3px 3px 0 rgba(15, 28, 25, 0.22);
+  --shadow-chip: 2px 2px 0 rgba(15, 28, 25, 0.16);
+  --shadow-picked: 3px 3px 0 rgba(31, 80, 72, 0.30);
+
+  /* ── 폰트 ── */
+  --font-jua: "Jua", sans-serif;
+  --font-gaegu: "Gaegu", cursive;
+  --font-sans: "IBM Plex Sans KR", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+/* ── 기본 리셋 ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-page);
+  color: var(--color-ink);
+}
+
+textarea,
+input,
+button,
+select {
+  font-family: inherit;
+}
+
+::placeholder {
+  color: var(--color-placeholder);
+}
+
+/* ── 편지지 배경 (컴포넌트에서 사용) ── */
+.lined-paper-bg {
+  background:
+    linear-gradient(90deg, transparent 0 34px, rgba(193, 90, 82, 0.28) 34px 35px, transparent 35px),
+    repeating-linear-gradient(var(--color-paper) 0 27px, #d8ccb2 27px 28px);
+}
+
+/* ── 차양 마스크 공용 ── */
+.awning-mask {
+  height: 15px;
+  -webkit-mask:
+    linear-gradient(#000, #000) 0 0/100% 7px no-repeat,
+    radial-gradient(circle 7px at 8px 7px, #000 7px, transparent 7.5px) 0 7px/16px 8px repeat-x;
+  mask:
+    linear-gradient(#000, #000) 0 0/100% 7px no-repeat,
+    radial-gradient(circle 7px at 8px 7px, #000 7px, transparent 7.5px) 0 7px/16px 8px repeat-x;
+}

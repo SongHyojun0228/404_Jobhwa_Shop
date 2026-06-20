@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Gaegu:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  textarea, input { font-family: 'IBM Plex Sans KR', sans-serif; }
+  ::placeholder { color: #a39c8b; }
+</style>
+</helmet>
+
+<div style="min-width: 100%; width: max-content; min-height: 100vh; box-sizing: border-box; padding: 48px; background: #37615a; font-family: 'IBM Plex Sans KR', sans-serif;">
+
+  <div style="margin-bottom: 34px;">
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #b6cdc7;">개발자의 잡화점 · A LITTLE SHOP OF WORRIES</div>
+    <div style="font-family: 'Jua', sans-serif; font-size: 30px; color: #fbf7ec; margin-top: 4px;">고민을 맡기고, 처방을 받고, 모아보다 — 화면 3종</div>
+  </div>
+
+  <div style="display: flex; gap: 44px; align-items: flex-start;">
+
+    <!-- ============ FRAME 1 : 고민 넣기 ============ -->
+    <div style="flex: none; width: 392px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #cfe0db; margin-bottom: 12px;">01 — 고민 넣기 / SUBMIT</div>
+      <div style="width: 392px; background: #ddd6c4; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: 7px 7px 0 rgba(15,28,25,.22);">
+
+        <div style="height: 15px; background: repeating-linear-gradient(90deg, #1f5048 0 14px, #e8dfca 14px 28px); -webkit-mask: linear-gradient(#000,#000) 0 0/100% 7px no-repeat, radial-gradient(circle 7px at 8px 7px, #000 7px, transparent 7.5px) 0 7px/16px 8px repeat-x; mask: linear-gradient(#000,#000) 0 0/100% 7px no-repeat, radial-gradient(circle 7px at 8px 7px, #000 7px, transparent 7.5px) 0 7px/16px 8px repeat-x;"></div>
+        <div style="display: flex; align-items: center; gap: 8px; background: #1f5048; padding: 6px 7px;">
+          <div style="width: 17px; height: 17px; background: #ffcd00; border-top: 1.5px solid #ffe27a; border-left: 1.5px solid #ffe27a; border-right: 1.5px solid #a87f00; border-bottom: 1.5px solid #a87f00;"></div>
+          <div style="flex: 1; font-weight: 700; font-size: 13px; color: #fff; white-space: nowrap;">고민접수 — 개발자의 잡화점</div>
+          <div style="display: flex; gap: 4px;">
+            <div style="width: 18px; height: 17px; background: #d8d3c4; border-top: 1.5px solid #f1ede2; border-left: 1.5px solid #f1ede2; border-right: 1.5px solid #8f897a; border-bottom: 1.5px solid #8f897a; font-size: 11px; text-align: center; line-height: 13px; color: #2a2722;">_</div>
+            <div style="width: 18px; height: 17px; background: #d8d3c4; border-top: 1.5px solid #f1ede2; border-left: 1.5px solid #f1ede2; border-right: 1.5px solid #8f897a; border-bottom: 1.5px solid #8f897a; font-size: 11px; text-align: center; line-height: 13px; color: #2a2722;">×</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 16px; padding: 4px 11px; border-bottom: 1px solid #b3ad9d; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #4a463c;">
+          <span><u>파</u>일</span><span><u>편</u>집</span><span><u>보</u>기</span><span>도움말</span>
+        </div>
+
+        <div style="padding: 18px 18px 16px;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #b5562f;">No.118 접수중</div>
+          <div style="font-family: 'Jua', sans-serif; font-size: 26px; color: #2a2722; line-height: 1.3; margin-top: 4px;">오늘의 고민을<br>맡기고 가세요</div>
+          <div style="font-size: 12.5px; color: #6f6a5e; margin-top: 7px; line-height: 1.6;">우유통에 살며시 넣어두고 가세요. 선정되면 익명으로 게시되고, 누군가의 처방이 도착합니다.</div>
+
+          <div style="display: flex; gap: 9px; margin-top: 15px; padding: 11px 12px; background: #fff3c4; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">
+            <div style="font-size: 14px;">⚠</div>
+            <div style="font-size: 11.5px; line-height: 1.55; color: #6b5800;">본인·타인을 특정할 수 있는 <b>실명, 연락처, 회사명, SNS 아이디</b>는 적지 말아주세요. 익명이라 더 솔직해질 수 있어요.</div>
+          </div>
+
+          <div style="margin-top: 18px;">
+            <div style="font-weight: 600; font-size: 12.5px; color: #2a2722; margin-bottom: 8px;">어떻게 표시할까요?</div>
+            <div style="display: flex; gap: 8px;">
+              <button onClick="{{ pickAnon1 }}" style="flex: 1; padding: 9px 0; cursor: pointer; font-family: 'IBM Plex Sans KR'; font-weight: 600; font-size: 13px; color: #2a2722; background: {{ a1AnonBg }}; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: 2px 2px 0 rgba(15,28,25,.16);">익명</button>
+              <button onClick="{{ pickNick1 }}" style="flex: 1; padding: 9px 0; cursor: pointer; font-family: 'IBM Plex Sans KR'; font-weight: 600; font-size: 13px; color: #2a2722; background: {{ a1NickBg }}; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: 2px 2px 0 rgba(15,28,25,.16);">닉네임</button>
+              <button onClick="{{ pickInit1 }}" style="flex: 1; padding: 9px 0; cursor: pointer; font-family: 'IBM Plex Sans KR'; font-weight: 600; font-size: 13px; color: #2a2722; background: {{ a1InitBg }}; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: 2px 2px 0 rgba(15,28,25,.16);">초성</button>
+            </div>
+            <sc-if value="{{ showNick1 }}" hint-placeholder-val="{{ falsy }}">
+              <input type="text" maxlength="20" placeholder="{{ nick1Placeholder }}" style="width: 100%; margin-top: 8px; padding: 10px 11px; font-size: 14px; background: #fffdf6; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">
+            </sc-if>
+          </div>
+
+          <div style="display: flex; gap: 9px; margin-top: 14px;">
+            <div style="flex: 1;">
+              <div style="font-weight: 600; font-size: 12.5px; color: #2a2722; margin-bottom: 8px;">나이대 <span style="color:#a39c8b; font-weight:400;">(선택)</span></div>
+              <input type="text" placeholder="예: 20대 후반" style="width: 100%; padding: 10px 11px; font-size: 14px; background: #fffdf6; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">
+            </div>
+            <div style="flex: 1;">
+              <div style="font-weight: 600; font-size: 12.5px; color: #2a2722; margin-bottom: 8px;">직업/신분 <span style="color:#a39c8b; font-weight:400;">(선택)</span></div>
+              <input type="text" maxlength="50" placeholder="예: 3년차 백엔드" style="width: 100%; padding: 10px 11px; font-size: 14px; background: #fffdf6; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">
+            </div>
+          </div>
+
+          <div style="margin-top: 14px;">
+            <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px;">
+              <div style="font-weight: 600; font-size: 12.5px; color: #2a2722;">고민 내용</div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #8a8474;">{{ worry1Count }} / 2000</div>
+            </div>
+            <textarea onInput="{{ onWorry1 }}" maxlength="2000" rows="6" placeholder="요즘 가장 무겁게 짊어지고 있는 고민을 편하게 적어주세요." style="width: 100%; padding: 0 14px 12px 42px; font-family: 'Gaegu', cursive; font-size: 17px; line-height: 28px; resize: none; color: #2a2722; background: linear-gradient(90deg, transparent 0 34px, rgba(193,90,82,.28) 34px 35px, transparent 35px), repeating-linear-gradient(#fffdf6 0 27px, #d8ccb2 27px 28px); border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;"></textarea>
+          </div>
+
+          <div style="margin-top: 14px;">
+            <div style="font-weight: 600; font-size: 12.5px; color: #2a2722; margin-bottom: 8px;">이메일 <span style="color:#a39c8b; font-weight:400;">(선택)</span></div>
+            <input type="email" placeholder="you@example.com" style="width: 100%; padding: 10px 11px; font-size: 14px; background: #fffdf6; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">
+            <div style="font-size: 11px; color: #8a8474; margin-top: 6px;">선정 알림에만 쓰고 게시물엔 절대 노출되지 않아요.</div>
+          </div>
+
+          <div style="margin-top: 18px; display: flex; align-items: center; gap: 13px; padding: 11px 13px; background: #eef0e6; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">
+            <div style="position: relative; width: 30px; height: 36px; flex: none;">
+              <div style="position: absolute; top: 0; left: 3px; width: 24px; height: 7px; background: #7f9a93; border-top: 2px solid #aabfb8; border-left: 2px solid #aabfb8; border-right: 2px solid #566962; border-bottom: 1px solid #566962; border-radius: 3px 3px 0 0;"></div>
+              <div style="position: absolute; top: 6px; left: 0; width: 30px; height: 30px; background: #8fa8a1; border-top: 2px solid #b4c8c2; border-left: 2px solid #b4c8c2; border-right: 2px solid #54665f; border-bottom: 2px solid #54665f; border-radius: 0 0 3px 3px;">
+                <div style="position: absolute; top: 6px; left: 6px; right: 6px; height: 4px; background: #2f3b37; border-radius: 2px;"></div>
+                <div style="position: absolute; bottom: 4px; left: 0; right: 0; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 7px; letter-spacing: 1px; color: #2f3b37;">우유</div>
+              </div>
+            </div>
+            <div style="font-size: 12px; color: #4f635c; line-height: 1.55;">다 쓴 편지는 가게 옆 <b style="color: #1f5048;">우유통</b>에 살짝 넣어두면 돼요. 운영자만 조용히 꺼내 읽습니다.</div>
+          </div>
+
+          <button style="width: 100%; margin-top: 12px; padding: 13px; cursor: pointer; font-family: 'Jua', sans-serif; font-size: 17px; color: #2a2722; background: #ffd95c; border-top: 2px solid #ffe9a6; border-left: 2px solid #ffe9a6; border-right: 2px solid #c79a14; border-bottom: 2px solid #c79a14; box-shadow: 3px 3px 0 rgba(15,28,25,.22);">우유통에 넣기 ▸</button>
+          <div style="text-align: center; font-size: 11px; color: #8a8474; margin-top: 9px;">넣은 뒤에는 익명성을 위해 다시 꺼내볼 수 없어요.</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 5px 11px; background: #cfc9ba; border-top: 2px solid #8f897a; font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #6f6a5e;">
+          <span>© 2025 개발자의 잡화점</span><span>🏪 영업중 · 24h</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ FRAME 2 : 고민 해결하기 ============ -->
+    <div style="flex: none; width: 392px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #cfe0db; margin-bottom: 12px;">02 — 고민 해결하기 / SOLVE</div>
+      <div style="width: 392px; background: #ddd6c4; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: 7px 7px 0 rgba(15,28,25,.22);">
+
+        <div style="height: 15px; background: repeating-linear-gradient(90deg, #b5562f 0 14px, #e8dfca 14px 28px); -webkit-mask: linear-gradient(#000,#000) 0 0/100% 7px no-repeat, radial-gradient(circle 7px at 8px 7px, #000 7px, transparent 7.5px) 0 7px/16px 8px repeat-x; mask: linear-gradient(#000,#000) 0 0/100% 7px no-repeat, radial-gradient(circle 7px at 8px 7px, #000 7px, transparent 7.5px) 0 7px/16px 8px repeat-x;"></div>
+        <div style="display: flex; align-items: center; gap: 8px; background: #1f5048; padding: 6px 7px;">
+          <div style="width: 19px; height: 15px; background: #fffdf6; border: 1.5px solid #2a2722; position: relative;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; height: 8px; background: #ffd95c; clip-path: polygon(0 0, 50% 75%, 100% 0); border-bottom: 1.5px solid #2a2722;"></div>
+          </div>
+          <div style="flex: 1; font-weight: 700; font-size: 13px; color: #fff; white-space: nowrap;">처방전 쓰기 — No.117</div>
+          <div style="display: flex; gap: 4px;">
+            <div style="width: 18px; height: 17px; background: #d8d3c4; border-top: 1.5px solid #f1ede2; border-left: 1.5px solid #f1ede2; border-right: 1.5px solid #8f897a; border-bottom: 1.5px solid #8f897a; font-size: 11px; text-align: center; line-height: 13px; color: #2a2722;">_</div>
+            <div style="width: 18px; height: 17px; background: #d8d3c4; border-top: 1.5px solid #f1ede2; border-left: 1.5px solid #f1ede2; border-right: 1.5px solid #8f897a; border-bottom: 1.5px solid #8f897a; font-size: 11px; text-align: center; line-height: 13px; color: #2a2722;">×</div>
+          </div>
+        </div>
+
+        <div style="padding: 14px 18px 16px;">
+          <!-- From / To header -->
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4a463c; line-height: 1.9; padding-bottom: 10px; border-bottom: 1px dashed #b3ad9d;">
+            <div>From&nbsp;: <span style="color:#1f5048;">나의 처방</span></div>
+            <div>To&nbsp;&nbsp;&nbsp;: <span style="color:#b5562f;">@사수없는주니어</span> · 3년차 백엔드</div>
+            <div>RE&nbsp;&nbsp;&nbsp;: No.117 — 사수 없이 버틸까, 이직할까</div>
+          </div>
+
+          <!-- 고민 원문 (sunken) -->
+          <div style="margin-top: 12px; padding: 0; background: #fffdf6; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">
+            <div style="font-family: 'Gaegu', cursive; font-size: 17px; color: #2a2722; line-height: 28px; padding: 7px 14px 12px 42px; background: linear-gradient(90deg, transparent 0 34px, rgba(193,90,82,.28) 34px 35px, transparent 35px), repeating-linear-gradient(#fffdf6 0 27px, #d8ccb2 27px 28px);">사수 없는 회사에 들어와 1년째 혼자 헤매고 있어요. 코드 리뷰를 한 번도 못 받아봐서 제 코드가 맞는지 늘 불안합니다. 이직을 해야 사수를 만날까요, 버티며 스스로 크는 게 맞을까요?</div>
+          </div>
+
+          <div style="margin-top: 16px;">
+            <div style="font-weight: 600; font-size: 12.5px; color: #2a2722; margin-bottom: 8px;">어떻게 표시할까요?</div>
+            <div style="display: flex; gap: 8px;">
+              <button onClick="{{ pickAnon2 }}" style="flex: 1; padding: 9px 0; cursor: pointer; font-family: 'IBM Plex Sans KR'; font-weight: 600; font-size: 13px; color: #2a2722; background: {{ a2AnonBg }}; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: 2px 2px 0 rgba(15,28,25,.16);">익명</button>
+              <button onClick="{{ pickNick2 }}" style="flex: 1; padding: 9px 0; cursor: pointer; font-family: 'IBM Plex Sans KR'; font-weight: 600; font-size: 13px; color: #2a2722; background: {{ a2NickBg }}; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: 2px 2px 0 rgba(15,28,25,.16);">닉네임</button>
+              <button onClick="{{ pickInit2 }}" style="flex: 1; padding: 9px 0; cursor: pointer; font-family: 'IBM Plex Sans KR'; font-weight: 600; font-size: 13px; color: #2a2722; background: {{ a2InitBg }}; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: 2px 2px 0 rgba(15,28,25,.16);">초성</button>
+            </div>
+            <sc-if value="{{ showNick2 }}" hint-placeholder-val="{{ falsy }}">
+              <input type="text" maxlength="20" placeholder="{{ nick2Placeholder }}" style="width: 100%; margin-top: 8px; padding: 10px 11px; font-size: 14px; background: #fffdf6; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">
+            </sc-if>
+          </div>
+
+          <div style="margin-top: 14px;">
+            <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px;">
+              <div style="font-weight: 600; font-size: 12.5px; color: #2a2722;">해결편지</div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #8a8474;">{{ letter2Count }} / 1000</div>
+            </div>
+            <textarea onInput="{{ onLetter2 }}" maxlength="1000" rows="6" placeholder="보낼 수는 없겠지만, 당신께 편지를 씁니다…" style="width: 100%; padding: 0 14px 12px 42px; font-family: 'Gaegu', cursive; font-size: 17px; line-height: 28px; resize: none; color: #2a2722; background: linear-gradient(90deg, transparent 0 34px, rgba(193,90,82,.28) 34px 35px, transparent 35px), repeating-linear-gradient(#fffdf6 0 27px, #d8ccb2 27px 28px); border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;"></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; margin-top: 16px;">
+            <button style="padding: 11px 30px; cursor: pointer; font-family: 'Jua', sans-serif; font-size: 16px; color: #fff; background: #b5562f; border-top: 2px solid #d98a64; border-left: 2px solid #d98a64; border-right: 2px solid #7d3618; border-bottom: 2px solid #7d3618; box-shadow: 3px 3px 0 rgba(15,28,25,.22); white-space: nowrap;">✉ 보내기</button>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 5px 11px; background: #cfc9ba; border-top: 2px solid #8f897a; font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #6f6a5e;">
+          <span>© 2025 개발자의 잡화점</span><span>📮 편지 수신중</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ FRAME 3 : 고민 모아보기 ============ -->
+    <div style="flex: none; width: 392px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #cfe0db; margin-bottom: 12px;">03 — 고민 모아보기 / COLLECT</div>
+      <div style="width: 392px; background: #ddd6c4; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: 7px 7px 0 rgba(15,28,25,.22);">
+
+        <div style="height: 15px; background: repeating-linear-gradient(90deg, #1f5048 0 14px, #e8dfca 14px 28px); -webkit-mask: linear-gradient(#000,#000) 0 0/100% 7px no-repeat, radial-gradient(circle 7px at 8px 7px, #000 7px, transparent 7.5px) 0 7px/16px 8px repeat-x; mask: linear-gradient(#000,#000) 0 0/100% 7px no-repeat, radial-gradient(circle 7px at 8px 7px, #000 7px, transparent 7.5px) 0 7px/16px 8px repeat-x;"></div>
+        <div style="display: flex; align-items: center; gap: 8px; background: #1f5048; padding: 6px 7px;">
+          <div style="width: 17px; height: 17px; background: #2c8c3c; border-top: 1.5px solid #6cc279; border-left: 1.5px solid #6cc279; border-right: 1.5px solid #1b5c27; border-bottom: 1.5px solid #1b5c27;"></div>
+          <div style="flex: 1; font-weight: 700; font-size: 13px; color: #fff; white-space: nowrap;">편지정리 — No.117 모아보기</div>
+          <div style="display: flex; gap: 4px;">
+            <div style="width: 18px; height: 17px; background: #d8d3c4; border-top: 1.5px solid #f1ede2; border-left: 1.5px solid #f1ede2; border-right: 1.5px solid #8f897a; border-bottom: 1.5px solid #8f897a; font-size: 11px; text-align: center; line-height: 13px; color: #2a2722;">_</div>
+            <div style="width: 18px; height: 17px; background: #d8d3c4; border-top: 1.5px solid #f1ede2; border-left: 1.5px solid #f1ede2; border-right: 1.5px solid #8f897a; border-bottom: 1.5px solid #8f897a; font-size: 11px; text-align: center; line-height: 13px; color: #2a2722;">×</div>
+          </div>
+        </div>
+
+        <!-- toolbar -->
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 11px; border-bottom: 1px solid #b3ad9d;">
+          <div style="display: flex; gap: 6px;">
+            <button onClick="{{ showAll }}" style="padding: 6px 11px; cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; color: #2a2722; background: {{ allTabBg }}; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a;">전체 {{ totalCount }}</button>
+            <button onClick="{{ showPicked }}" style="padding: 6px 11px; cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; color: #2a2722; background: {{ pickedTabBg }}; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a;">채택 {{ pickedCount }}</button>
+          </div>
+          <button onClick="{{ copyAll }}" style="padding: 6px 11px; cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; color: #2a2722; background: #e4dfd2; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a;">⧉ {{ copyLabel }}</button>
+        </div>
+
+        <!-- 고민 요약 (sunken) -->
+        <div style="margin: 12px 12px 0; padding: 11px 12px; background: #fff3c4; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #6b5800; margin-bottom: 4px;">@사수없는주니어 · 3년차 백엔드</div>
+          <div style="font-size: 12.5px; line-height: 1.55; color: #4a463c;">사수 없는 회사에서 1년째 혼자 헤매는 중. 코드 리뷰를 못 받아 불안한데, 이직해야 할까 버텨야 할까?</div>
+        </div>
+
+        <div style="padding: 14px 12px 14px; display: flex; flex-direction: column; gap: 10px;">
+          <sc-for list="{{ visibleLetters }}" as="ltr" hint-placeholder-count="4">
+            <div style="background: #fffdf6; padding: 13px; border-top: 2px solid #f1ede2; border-left: 2px solid #f1ede2; border-right: 2px solid #8f897a; border-bottom: 2px solid #8f897a; box-shadow: {{ ltr.shadow }};">
+              <div style="display: flex; align-items: center; gap: 9px;">
+                <button onClick="{{ ltr.toggle }}" style="flex: none; width: 22px; height: 22px; cursor: pointer; font-size: 14px; font-weight: 700; color: #2a2722; line-height: 1; background: {{ ltr.checkBg }}; border-top: 2px solid #8f897a; border-left: 2px solid #8f897a; border-right: 2px solid #f1ede2; border-bottom: 2px solid #f1ede2;">{{ ltr.check }}</button>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; color: #4a463c;">{{ ltr.idx }}</div>
+                <div style="font-size: 13px; font-weight: 600; color: #2a2722;">{{ ltr.name }}</div>
+                <div style="flex: 1;"></div>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #a39c8b;">{{ ltr.tag }}</div>
+              </div>
+              <div style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed #cfc9b6; font-family: 'Gaegu', cursive; font-size: 16px; line-height: 1.55; color: #2a2722;">{{ ltr.content }}</div>
+            </div>
+          </sc-for>
+
+          <button style="width: 100%; margin-top: 4px; padding: 12px; cursor: pointer; font-family: 'Jua', sans-serif; font-size: 16px; color: #fff; background: #2c8c3c; border-top: 2px solid #6cc279; border-left: 2px solid #6cc279; border-right: 2px solid #1b5c27; border-bottom: 2px solid #1b5c27; box-shadow: 3px 3px 0 rgba(15,28,25,.22);">✓ 완료 처리 (해결법 게시 후)</button>
+          <div style="text-align: center; font-size: 11px; color: #8a8474;">채택한 편지를 SNS 해결법 게시물에 옮겨 담으세요.</div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding: 5px 11px; background: #cfc9ba; border-top: 2px solid #8f897a; font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #6f6a5e;">
+          <span>© 2025 개발자의 잡화점</span><span>🗂 {{ pickedCount }}건 채택됨</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:1080}}">
+class Component extends DCLogic {
+  state = {
+    dt1: 'anon', worry1Count: 0,
+    dt2: 'anon', letter2Count: 0,
+    mode3: 'all', copied: false,
+    letters: [
+      { id: 1, name: '8년차사수', tag: 'NICKNAME', content: '저도 첫 회사에 사수가 없었어요. 대신 오픈소스에 PR을 보내며 모르는 사람들에게 리뷰를 받았습니다. 좋은 레포 하나 정해서 작은 이슈부터 잡아보세요. 인터넷 전체가 사수가 됩니다.', picked: true },
+      { id: 2, name: '익명', tag: 'ANON', content: '이직은 사수가 없어서 하는 게 아니라 \u2018더 배울 게 없을 때\u2019 하는 거예요. 지금 회사에서 아직 배울 게 남았는지부터 종이에 적어보면 답이 보일 거예요.', picked: true },
+      { id: 3, name: 'ㅈㅎㅇ', tag: 'INITIALS', content: '코드가 맞는지 불안한 건 잘하고 있다는 증거예요. 정작 못하는 사람은 불안해하지도 않거든요. 그 불안을 테스트 코드로 바꿔보세요.', picked: false },
+      { id: 4, name: '퇴사3번한사람', tag: 'NICKNAME', content: '회사 밖에도 사수는 많아요. 스터디, 사이드 프로젝트, 컨퍼런스에서 만난 시니어들이 제겐 진짜 사수였습니다. 버티기와 이직 사이에 \u2018밖에서 배우기\u2019가 있어요.', picked: true },
+      { id: 5, name: '익명', tag: 'ANON', content: '테스트 코드를 짜보세요. 테스트는 거짓말 안 하는 가장 솔직한 리뷰어예요. 통과하면 적어도 그 동작은 맞는 겁니다.', picked: false },
+    ],
+  };
+
+  bg(sel) { return sel ? '#ffd95c' : '#e4dfd2'; }
+
+  renderVals() {
+    const s = this.state;
+    const visible = s.mode3 === 'picked' ? s.letters.filter(l => l.picked) : s.letters;
+    return {
+      falsy: false,
+
+      a1AnonBg: this.bg(s.dt1 === 'anon'),
+      a1NickBg: this.bg(s.dt1 === 'nick'),
+      a1InitBg: this.bg(s.dt1 === 'init'),
+      showNick1: s.dt1 !== 'anon',
+      nick1Placeholder: s.dt1 === 'init' ? '초성 (예: ㄱㄴㄷ)' : '닉네임 (20자 이내)',
+      worry1Count: s.worry1Count,
+      pickAnon1: () => this.setState({ dt1: 'anon' }),
+      pickNick1: () => this.setState({ dt1: 'nick' }),
+      pickInit1: () => this.setState({ dt1: 'init' }),
+      onWorry1: e => this.setState({ worry1Count: e.target.value.length }),
+
+      a2AnonBg: this.bg(s.dt2 === 'anon'),
+      a2NickBg: this.bg(s.dt2 === 'nick'),
+      a2InitBg: this.bg(s.dt2 === 'init'),
+      showNick2: s.dt2 !== 'anon',
+      nick2Placeholder: s.dt2 === 'init' ? '초성 (예: ㄱㄴㄷ)' : '닉네임 (20자 이내)',
+      letter2Count: s.letter2Count,
+      pickAnon2: () => this.setState({ dt2: 'anon' }),
+      pickNick2: () => this.setState({ dt2: 'nick' }),
+      pickInit2: () => this.setState({ dt2: 'init' }),
+      onLetter2: e => this.setState({ letter2Count: e.target.value.length }),
+
+      totalCount: s.letters.length,
+      pickedCount: s.letters.filter(l => l.picked).length,
+      allTabBg: this.bg(s.mode3 === 'all'),
+      pickedTabBg: this.bg(s.mode3 === 'picked'),
+      showAll: () => this.setState({ mode3: 'all' }),
+      showPicked: () => this.setState({ mode3: 'picked' }),
+      copyLabel: s.copied ? '복사됨' : '전체 복사',
+      copyAll: () => {
+        const txt = s.letters.filter(l => l.picked).map((l, i) => `[${i + 1}] ${l.name}\n${l.content}`).join('\n\n');
+        try { navigator.clipboard && navigator.clipboard.writeText(txt); } catch (e) {}
+        this.setState({ copied: true });
+        setTimeout(() => this.setState({ copied: false }), 1500);
+      },
+      visibleLetters: visible.map((l, i) => ({
+        idx: '#' + String(i + 1).padStart(2, '0'),
+        name: l.name,
+        tag: l.tag,
+        content: l.content,
+        check: l.picked ? '✓' : '',
+        checkBg: l.picked ? '#ffd95c' : '#fffdf6',
+        shadow: l.picked ? '3px 3px 0 rgba(31,80,72,.30)' : '2px 2px 0 rgba(15,28,25,.10)',
+        toggle: () => this.setState(st => ({
+          letters: st.letters.map(x => x.id === l.id ? { ...x, picked: !x.picked } : x),
+        })),
+      })),
+    };
+  }
+}
+</script>
+</body>
+</html>
