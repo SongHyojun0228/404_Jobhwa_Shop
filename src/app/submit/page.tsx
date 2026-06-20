@@ -1,7 +1,25 @@
 import RetroWindow from "@/components/RetroWindow";
 import SubmitForm from "./SubmitForm";
 
-export default function SubmitPage() {
+export const dynamic = "force-dynamic";
+
+async function getWorryCount(): Promise<number> {
+  if (
+    !process.env.NEXT_PUBLIC_SUPABASE_URL ||
+    !process.env.SUPABASE_SERVICE_ROLE_KEY
+  ) {
+    return 0;
+  }
+  const { getSupabaseAdmin } = await import("@/lib/supabase/server");
+  const supabase = getSupabaseAdmin();
+  const { count } = await supabase
+    .from("worries")
+    .select("*", { count: "exact", head: true });
+  return count ?? 0;
+}
+
+export default async function SubmitPage() {
+  const worryCount = await getWorryCount();
   return (
     <main className="min-h-screen flex items-center justify-center p-4">
       <RetroWindow
@@ -33,7 +51,7 @@ export default function SubmitPage() {
           </div>
         }
       >
-        <SubmitForm />
+        <SubmitForm worryNumber={worryCount + 1} />
       </RetroWindow>
     </main>
   );

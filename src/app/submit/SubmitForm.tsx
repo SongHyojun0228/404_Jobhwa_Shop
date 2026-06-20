@@ -123,7 +123,7 @@ function SuccessView({ hadEmail }: { hadEmail: boolean }) {
 }
 
 /* ── 메인 폼 ── */
-export default function SubmitForm() {
+export default function SubmitForm({ worryNumber }: { worryNumber: number }) {
   const [displayType, setDisplayType] = useState<DisplayType>("anonymous");
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -201,7 +201,7 @@ export default function SubmitForm() {
             color: "#b5562f",
           }}
         >
-          No.118 접수중
+          No.{worryNumber} 접수중
         </div>
 
         {/* 제목 */}
